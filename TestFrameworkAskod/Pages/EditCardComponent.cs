@@ -16,8 +16,8 @@ namespace TestFrameworkAskod.Pages
         //[FindsBy(How = How.CssSelector, Using = "#CardFormLoader_receivedCardForm_recivedShortContent_ContentTextBox_txt")]
         //public IWebElement contentField;
 
-        public IWebElement corespondentOpeningDirectory => Driver.FindElement(By.CssSelector("#CardFormLoader_receivedCardForm_recivedCorrespondent_CorrespondentField_btnAC"));
-        public IWebElement contentField => Driver.FindElement(By.CssSelector("#CardFormLoader_receivedCardForm_recivedShortContent_ContentTextBox_txt"));
+        public IWebElement CorespondentOpeningDirectory => Driver.FindElement(By.CssSelector("#CardFormLoader_receivedCardForm_recivedCorrespondent_CorrespondentField_btnAC"));
+        public IWebElement ContentField => Driver.FindElement(By.CssSelector("#CardFormLoader_receivedCardForm_recivedShortContent_ContentTextBox_txt"));
 
         public EditCardComponent(IWebDriver driver) : base(driver)
         {

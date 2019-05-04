@@ -19,8 +19,8 @@ namespace TestFrameworkAskod.Tests
 
             driver.SwitchTo().Frame(0);
 
-            editingIncomingCurrentCardFilemanagerPage.contentField.SendKeys("Test");
-            editingIncomingCurrentCardFilemanagerPage.corespondentOpeningDirectory.Click();
+            editingIncomingCurrentCardFilemanagerPage.ContentField.SendKeys("Test");
+            editingIncomingCurrentCardFilemanagerPage.CorespondentOpeningDirectory.Click();
             
 
             Thread.Sleep(27000);

@@ -13,8 +13,8 @@ namespace TestFrameworkAskod.Tests
             OpeningFilemanagerIncomingCurrent();
 
             OpenCardindexComponent openingCardindexInboxCurrentPage = new OpenCardindexComponent(driver);
-            Assert.True(IsElementPresent(openingCardindexInboxCurrentPage.bredCrumbsFilemanagerIncomingCurrent),
-                $"Element '{openingCardindexInboxCurrentPage.bredCrumbsFilemanagerIncomingCurrent}' is not present on the page as expected");
+            Assert.True(IsElementPresent(openingCardindexInboxCurrentPage.BredCrumbsFilemanagerIncomingCurrent),
+                $"Element '{openingCardindexInboxCurrentPage.BredCrumbsFilemanagerIncomingCurrent}' is not present on the page as expected");
 
             Thread.Sleep(7000);
         }

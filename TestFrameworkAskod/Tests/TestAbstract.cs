@@ -36,22 +36,22 @@ namespace TestFrameworkAskod.Tests
             AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
 
             authorizationAskodPage.LoginField.SendKeys(validLogin);
-            authorizationAskodPage.passwordField.SendKeys(validPassword);
-            authorizationAskodPage.enterButton.Click();
+            authorizationAskodPage.PasswordField.SendKeys(validPassword);
+            authorizationAskodPage.EnterButton.Click();
         }
 
         public void OpeningFilemanagerIncomingCurrent()
         {
             OpenCardindexComponent openingCardindexInboxCurrentPage = new OpenCardindexComponent(driver);
             //openingCardindexInboxCurrentPage.fileManagerButton.Click();
-            openingCardindexInboxCurrentPage.incomingCardsTreeButton.Click();
-            openingCardindexInboxCurrentPage.incomingCardsCurrentBranch.Click();
+            openingCardindexInboxCurrentPage.IncomingCardsTreeButton.Click();
+            openingCardindexInboxCurrentPage.IncomingCardsCurrentBranch.Click();
         }
 
         public void OpeningIncomingCard()
         {
             OpenCardComponent openingIncomimgCardFilemanagerPage = new OpenCardComponent(driver);
-            openingIncomimgCardFilemanagerPage.editRecordCardFilemanger.Click();
+            openingIncomimgCardFilemanagerPage.EditRecordCardFilemanger.Click();
         }
 
         public bool IsElementPresent(IWebElement element)

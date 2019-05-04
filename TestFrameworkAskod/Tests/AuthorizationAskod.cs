@@ -16,7 +16,8 @@ namespace TestFrameworkAskod
         public void AuthorizationTestAskod()
         {
             AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
-            Login(validLogin, validPassword);
+
+            authorizationAskodPage.Login("тест 5", "111");
 
             Thread.Sleep(17000);
         }

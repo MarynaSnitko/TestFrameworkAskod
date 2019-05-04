@@ -23,8 +23,18 @@ namespace TestFrameworkAskod.Pages
         public IWebElement PasswordField => Driver.FindElement(By.CssSelector("#entPass"));
         public IWebElement EnterButton => Driver.FindElement(By.CssSelector("#entButton"));
 
+        public string validLogin = "тест 5";
+        public string validPassword = "111";
+
         public AuthorizationAskodPage(IWebDriver driver) : base(driver)
         { 
+        }
+
+        public void Login(string login, string password)
+        {
+            LoginField.SendKeys(validLogin);
+            PasswordField.SendKeys(validPassword);
+            EnterButton.Click();
         }
 
     }

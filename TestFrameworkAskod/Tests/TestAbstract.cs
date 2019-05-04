@@ -13,9 +13,6 @@ namespace TestFrameworkAskod.Tests
     {
         public IWebDriver driver;
 
-        public string validLogin = "тест 5";
-        public string validPassword = "111";
-
         [SetUp]
         public void SetUp()
         {
@@ -29,15 +26,6 @@ namespace TestFrameworkAskod.Tests
         public void TearDown()
         {
             driver.Quit();
-        }
-
-        public void Login(string login, string password)
-        {
-            AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
-
-            authorizationAskodPage.LoginField.SendKeys(validLogin);
-            authorizationAskodPage.PasswordField.SendKeys(validPassword);
-            authorizationAskodPage.EnterButton.Click();
         }
 
         public void OpeningFilemanagerIncomingCurrent()

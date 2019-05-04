@@ -57,14 +57,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\AttachFileTemplateComponent.cs" />
-    <Compile Include="Pages\AuthorizationAskodPage.cs" />
-    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\AuthorizationAskodPage\AuthorizationAskodPage.cs" />
+    <Compile Include="Pages\BasePage\BasePage.cs" />
     <Compile Include="Pages\EditCardComponent.cs" />
     <Compile Include="Pages\OpenCardindexComponent.cs" />
     <Compile Include="Pages\OpenCardComponent.cs" />
-    <Compile Include="Tests\AttachFileTemplate.cs" />
-    <Compile Include="Tests\AuthorizationAskod.cs" />
+    <Compile Include="Tests\AuthorizationAskod\AuthorizationAskod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\EditCard.cs" />
     <Compile Include="Tests\OpenCardindex.cs" />

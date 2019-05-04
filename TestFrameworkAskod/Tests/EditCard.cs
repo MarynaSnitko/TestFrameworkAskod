@@ -11,11 +11,14 @@ namespace TestFrameworkAskod.Tests
         [Test]
         public void EditingIncomingCurrentCardFilemanagerTest()
         {
-            Login(validLogin, validPassword);
-            OpeningFilemanagerIncomingCurrent();
-            OpeningIncomingCard();
-
+            AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
+            OpenCardindexComponent openCardindexComponent = new OpenCardindexComponent(driver);
+            OpenCardComponent openCardComponent = new OpenCardComponent(driver);
             EditCardComponent editingIncomingCurrentCardFilemanagerPage = new EditCardComponent(driver);
+
+            authorizationAskodPage.Login("тест 5", "111");
+            openCardindexComponent.OpenCardindexList();
+            openCardComponent.OpenIncomingCard();
 
             driver.SwitchTo().Frame(0);
 

@@ -9,9 +9,13 @@ namespace TestFrameworkAskod.Tests
         [Test]
         public void OpeningCardindexInboxCurrentTest()
         {
-            Login(validLogin, validPassword);
-            OpeningFilemanagerIncomingCurrent();
-            OpeningIncomingCard();
+            AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
+            OpenCardindexComponent openCardindexComponent = new OpenCardindexComponent(driver);
+            OpenCardComponent openCardComponent = new OpenCardComponent(driver);
+
+            authorizationAskodPage.Login("тест 5", "111");
+            openCardindexComponent.OpenCardindexList();
+            openCardComponent.OpenIncomingCard();
 
             //OpeningCardindexInboxCurrentPage openingCardindexInboxCurrentPage = new OpeningCardindexInboxCurrentPage(driver);
             //Assert.True(IsElementPresent(openingCardindexInboxCurrentPage.bredCrumbsFilemanagerIncomingCurrent),

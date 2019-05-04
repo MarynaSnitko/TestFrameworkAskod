@@ -28,12 +28,6 @@ namespace TestFrameworkAskod.Tests
             driver.Quit();
         }
 
-        public void OpeningIncomingCard()
-        {
-            OpenCardComponent openingIncomimgCardFilemanagerPage = new OpenCardComponent(driver);
-            openingIncomimgCardFilemanagerPage.EditRecordCardFilemanger.Click();
-        }
-
         public bool IsElementPresent(IWebElement element)
         {
             try

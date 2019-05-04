@@ -13,5 +13,10 @@ namespace TestFrameworkAskod.Pages
         public OpenCardComponent(IWebDriver driver) : base(driver)
         {
         }
+
+        public void OpenIncomingCard()
+        {
+            EditRecordCardFilemanger.Click();
+        }
     }
 }

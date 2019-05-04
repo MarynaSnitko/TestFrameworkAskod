@@ -28,14 +28,6 @@ namespace TestFrameworkAskod.Tests
             driver.Quit();
         }
 
-        public void OpeningFilemanagerIncomingCurrent()
-        {
-            OpenCardindexComponent openingCardindexInboxCurrentPage = new OpenCardindexComponent(driver);
-            //openingCardindexInboxCurrentPage.fileManagerButton.Click();
-            openingCardindexInboxCurrentPage.IncomingCardsTreeButton.Click();
-            openingCardindexInboxCurrentPage.IncomingCardsCurrentBranch.Click();
-        }
-
         public void OpeningIncomingCard()
         {
             OpenCardComponent openingIncomimgCardFilemanagerPage = new OpenCardComponent(driver);

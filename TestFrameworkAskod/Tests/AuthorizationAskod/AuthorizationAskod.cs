@@ -42,8 +42,8 @@ namespace TestFrameworkAskod
 
             //Assert.AreEqual(expectedText, actualText, $"An expected message is {expectedText}, but actual message is {actualText}");
 
-            //Assert.True(IsElementPresent(authorizationAskodPage.ErrorMessageInvalidLogin),
-            //    $"Element '{authorizationAskodPage.ErrorMessageInvalidLogin}' is not present on the page as expected");
+            Assert.True(IsElementPresent(authorizationAskodPage.ErrorMessageInvalidLogin),
+                $"Element '{authorizationAskodPage.ErrorMessageInvalidLogin}' is not present on the page as expected");
 
             Thread.Sleep(17000);
         }

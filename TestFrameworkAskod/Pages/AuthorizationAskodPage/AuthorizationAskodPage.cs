@@ -23,7 +23,9 @@ namespace TestFrameworkAskod.Pages
         public IWebElement PasswordField => Driver.FindElement(By.CssSelector("#entPass"));
         public IWebElement EnterButton => Driver.FindElement(By.CssSelector("#entButton"));
         public IWebElement AskodTodayDataBlock => Driver.FindElement(By.CssSelector("#AskodTodayData"));
-        public IWebElement ErrorMessageInvalidLogin => Driver.FindElement(By.CssSelector("#alert1557031326471_content > div > div.rwDialogText"));
+        public IWebElement ErrorMessageInvalidLogin => Driver.FindElement(By.CssSelector("[class='rwDialogPopup radalert'] div.rwDialogText"));
+        // автогенеренный id
+
 
         public string validLogin = "тест 5";
         public string validPassword = "111";

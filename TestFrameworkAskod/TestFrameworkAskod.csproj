@@ -63,10 +63,12 @@
     <Compile Include="Pages\AskodHorizontalMenuComponent.cs" />
     <Compile Include="Pages\OpenCardindexComponent.cs" />
     <Compile Include="Pages\OpenCardComponent.cs" />
+    <Compile Include="Pages\ToolbarCardindexComponent.cs" />
     <Compile Include="Tests\AuthorizationAskod\AuthorizationAskod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\OpenAskodHorizontalMenu.cs" />
     <Compile Include="Tests\EditCard.cs" />
+    <Compile Include="Tests\GenerateReport.cs" />
     <Compile Include="Tests\OpenCardindex.cs" />
     <Compile Include="Tests\OpenCard.cs" />
     <Compile Include="Tests\TestAbstract.cs" />

@@ -11,13 +11,39 @@ using TestFrameworkAskod.Tests;
 namespace TestFrameworkAskod
 {
     public class AuthorizationAskod : TestAbstract
-    {
+    { 
         [Test]
+        [Category("Valid authorization")]
         public void AuthorizationTestAskod()
         {
             AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
 
-            authorizationAskodPage.Login("тест 5", "111"); // Как передать параметры validLogin & validPassword?
+            authorizationAskodPage.Login(authorizationAskodPage.validLogin, authorizationAskodPage.validPassword);
+
+            Assert.True(IsElementPresent(authorizationAskodPage.AskodTodayDataBlock),
+                $"Element '{authorizationAskodPage.AskodTodayDataBlock}' is not present on the page as expected");
+
+            Thread.Sleep(17000);
+        }
+
+        [Test]
+        [Category("Invalid authorization")]
+        public void InvalidAuthorizationTestAskod()
+        {
+            //string expectedText = "Помилка авторизації!Невірно введено логін або пароль користувача.У Вас залишилось 5 спроб(а / и).";
+
+            AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
+
+            authorizationAskodPage.InvalidLogin(authorizationAskodPage.invalidLogin, authorizationAskodPage.invalidPassword);
+
+            // TO DO!!!
+            //driver.SwitchTo().Frame(0);
+            //string actualText = authorizationAskodPage.ErrorMessageInvalidLogin.Text.Trim();
+
+            //Assert.AreEqual(expectedText, actualText, $"An expected message is {expectedText}, but actual message is {actualText}");
+
+            //Assert.True(IsElementPresent(authorizationAskodPage.ErrorMessageInvalidLogin),
+            //    $"Element '{authorizationAskodPage.ErrorMessageInvalidLogin}' is not present on the page as expected");
 
             Thread.Sleep(17000);
         }

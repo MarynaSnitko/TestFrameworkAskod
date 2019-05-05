@@ -16,7 +16,7 @@ namespace TestFrameworkAskod.Tests
             OpenCardComponent openCardComponent = new OpenCardComponent(driver);
             EditCardComponent editingIncomingCurrentCardFilemanagerPage = new EditCardComponent(driver);
 
-            authorizationAskodPage.Login("тест 5", "111");
+            authorizationAskodPage.Login(authorizationAskodPage.validLogin, authorizationAskodPage.validPassword);
             openCardindexComponent.OpenCardindexList();
             openCardComponent.OpenIncomingCard();
 

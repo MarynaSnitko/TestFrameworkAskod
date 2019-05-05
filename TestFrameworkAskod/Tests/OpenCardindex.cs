@@ -12,7 +12,7 @@ namespace TestFrameworkAskod.Tests
             AuthorizationAskodPage authorizationAskodPage = new AuthorizationAskodPage(driver);
             OpenCardindexComponent openCardindexComponent = new OpenCardindexComponent(driver);
 
-            authorizationAskodPage.Login("тест 5", "111");
+            authorizationAskodPage.Login(authorizationAskodPage.validLogin, authorizationAskodPage.validPassword);
             openCardindexComponent.OpenCardindexList();
 
             Assert.True(IsElementPresent(openCardindexComponent.BredCrumbsFilemanagerIncomingCurrent),

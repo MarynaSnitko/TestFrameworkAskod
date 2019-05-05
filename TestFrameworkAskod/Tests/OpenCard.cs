@@ -13,7 +13,7 @@ namespace TestFrameworkAskod.Tests
             OpenCardindexComponent openCardindexComponent = new OpenCardindexComponent(driver);
             OpenCardComponent openCardComponent = new OpenCardComponent(driver);
 
-            authorizationAskodPage.Login("тест 5", "111");
+            authorizationAskodPage.Login(authorizationAskodPage.validLogin, authorizationAskodPage.validPassword);
             openCardindexComponent.OpenCardindexList();
             openCardComponent.OpenIncomingCard();
 

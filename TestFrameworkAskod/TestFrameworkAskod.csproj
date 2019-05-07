@@ -71,7 +71,7 @@
     <Compile Include="Tests\GenerateReport.cs" />
     <Compile Include="Tests\OpenCardindex.cs" />
     <Compile Include="Tests\OpenCard.cs" />
-    <Compile Include="Tests\TestAbstract.cs" />
+    <Compile Include="Tests\BaseTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

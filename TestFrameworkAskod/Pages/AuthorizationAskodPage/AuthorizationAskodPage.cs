@@ -10,28 +10,16 @@ namespace TestFrameworkAskod.Pages
 {
     public class AuthorizationAskodPage : BasePage
     {
-        //[FindsBy(How = How.CssSelector, Using = "#entLogin")]
-        //public IWebElement loginField;
-
-        //[FindsBy(How = How.CssSelector, Using = "#entPass")]
-        //public IWebElement passwordField;
-
-        //[FindsBy(How = How.CssSelector, Using = "#entButton")]
-        //public IWebElement enterButton;
-
         public IWebElement LoginField => Driver.FindElement(By.CssSelector("#entLogin"));
         public IWebElement PasswordField => Driver.FindElement(By.CssSelector("#entPass"));
         public IWebElement EnterButton => Driver.FindElement(By.CssSelector("#entButton"));
         public IWebElement AskodTodayDataBlock => Driver.FindElement(By.CssSelector("#AskodTodayData"));
         public IWebElement ErrorMessageInvalidLogin => Driver.FindElement(By.CssSelector("[class='rwDialogPopup radalert'] div.rwDialogText"));
-        // автогенеренный id
-
 
         public string validLogin = "тест 5";
         public string validPassword = "111";
         public string invalidLogin = "invalidLogin";
         public string invalidPassword = "invalidPassword";
-
 
         public AuthorizationAskodPage(IWebDriver driver) : base(driver)
         { 
@@ -50,6 +38,5 @@ namespace TestFrameworkAskod.Pages
             PasswordField.SendKeys(invalidPassword);
             EnterButton.Click();
         }
-
     }
 }

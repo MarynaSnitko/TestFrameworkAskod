@@ -9,7 +9,7 @@ using TestFrameworkAskod.Pages;
 
 namespace TestFrameworkAskod.Tests
 {
-    public class TestAbstract
+    public class BaseTest
     {
         public IWebDriver driver;
 

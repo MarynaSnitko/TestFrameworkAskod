@@ -4,7 +4,7 @@ using TestFrameworkAskod.Pages;
 
 namespace TestFrameworkAskod.Tests
 {
-    public class OpenCardindex : TestAbstract
+    public class OpenCardindex : BaseTest
     {
         [Test]
         public void OpeningCardindexInboxCurrentTest()

@@ -4,7 +4,7 @@ using TestFrameworkAskod.Pages;
 
 namespace TestFrameworkAskod.Tests
 {
-    public class OpenCard : TestAbstract
+    public class OpenCard : BaseTest
     {
         [Test]
         public void OpeningCardindexInboxCurrentTest()
@@ -16,6 +16,8 @@ namespace TestFrameworkAskod.Tests
             authorizationAskodPage.Login(authorizationAskodPage.validLogin, authorizationAskodPage.validPassword);
             openCardindexComponent.OpenCardindexList();
             openCardComponent.OpenIncomingCard();
+
+            openCardComponent.CardTitle.GetAttribute("text");
 
             //OpeningCardindexInboxCurrentPage openingCardindexInboxCurrentPage = new OpeningCardindexInboxCurrentPage(driver);
             //Assert.True(IsElementPresent(openingCardindexInboxCurrentPage.bredCrumbsFilemanagerIncomingCurrent),

@@ -6,7 +6,7 @@ using TestFrameworkAskod.Pages;
 
 namespace TestFrameworkAskod.Tests
 {
-    public class EditCard : TestAbstract
+    public class EditCard : BaseTest
     {
         [Test]
         public void EditingIncomingCurrentCardFilemanagerTest()

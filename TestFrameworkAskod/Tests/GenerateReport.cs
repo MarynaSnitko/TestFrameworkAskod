@@ -4,7 +4,7 @@ using TestFrameworkAskod.Pages;
 
 namespace TestFrameworkAskod.Tests
 {
-    public class GenerateReport : TestAbstract
+    public class GenerateReport : BaseTest
     {
         [Test]
         public void GenerateReportTest()

@@ -6,7 +6,7 @@ using TestFrameworkAskod.Pages;
 
 namespace TestFrameworkAskod.Tests
 {
-    public class OpenAskodHorizontalMenu : TestAbstract
+    public class OpenAskodHorizontalMenu : BaseTest
     {
         [Test]
         public void OpeningTeamworkMenuTest()

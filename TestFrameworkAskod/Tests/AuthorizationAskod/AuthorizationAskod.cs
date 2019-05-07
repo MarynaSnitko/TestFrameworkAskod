@@ -10,7 +10,7 @@ using TestFrameworkAskod.Tests;
 
 namespace TestFrameworkAskod
 {
-    public class AuthorizationAskod : TestAbstract
+    public class AuthorizationAskod : BaseTest
     { 
         [Test]
         [Category("Valid authorization")]

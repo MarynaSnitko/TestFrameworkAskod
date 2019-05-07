@@ -19,7 +19,7 @@ namespace TestFrameworkAskod.Tests
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.Navigate().GoToUrl("http://193.93.185.210:54542/Askod.dev/Default.aspx#");
+            driver.Navigate().GoToUrl("http://app-server/Askod.Dev/Login.aspx");
         }
 
         [TearDown]
